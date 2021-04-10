@@ -153,6 +153,7 @@ int insertFirst(headNode* h, int key) {
 
 
 /* 리스트를 검색하여, 입력받은 key보다 큰값이 나오는 노드 바로 앞에 삽입 */
+/*첫번째 처리후 중간처리 그이후에도 없다면 마지막에 노드삽입*/
 int insertNode(headNode* h, int key) {
 	listNode* select = h->first;
 	listNode* preview = NULL;
