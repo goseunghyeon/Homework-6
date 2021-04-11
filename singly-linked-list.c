@@ -203,7 +203,7 @@ int insertLast(headNode* h, int key) {
 	node = (listNode*)malloc(sizeof(listNode));
 	node->key = key;
 	node->link = NULL;
-	while (true) {
+	while (1) {
 		if (select->link == NULL)
 			break;
 		else
